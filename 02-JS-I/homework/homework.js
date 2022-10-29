@@ -180,20 +180,20 @@ function numeroRandom() {
   return Math.random()
 }
 
-function esPositivo(num) {
+function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num === 0) {
- return false;
- }
-else if (num > 0) {
-  return "es positivo";
-}  
-else {
-  return "es negativo";
-}
+  if(numero === 0) {
+    return false;
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -212,13 +212,11 @@ function combinarNombres(nombre, apellido) {
   
 }
 
-function obtenerSaludo(nombre) {
+function obtenerSaludo(name) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + 'martin'
-
-  
+  return 'Hola ' + name + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -268,7 +266,7 @@ function esVocal(letra){
     return "Es vocal";
    }
     
-    return "dato incorrecto"
+    return "Dato incorrecto"
    }
   
 
